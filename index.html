@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Urdu Poetry Pakistan | Pakistani Urdu Poets & Poetry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+      line-height: 2;
+    }
+    header {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #000;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .poet-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+    }
+    .ad-box {
+      background: #eee;
+      border: 2px dashed #999;
+      padding: 20px;
+      text-align: center;
+      margin: 30px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body><header>
+  <div class="logo">Urdu Poetry Pakistan</div>
+  <p>Pakistani Urdu Poets • Poetry • Literature</p>
+</header><nav>
+  <a href="#about">ہمارے بارے میں</a>
+  <a href="#poets">شعرا</a>
+  <a href="#contact">رابطہ</a>
+</nav><div class="container">  <section id="about">
+    <div class="poet-card">
+      <h2>ہمارے بارے میں</h2>
+      <p>
+        یہ ویب سائٹ اردو ادب اور خاص طور پر پاکستانی شعرا کو خراجِ تحسین پیش کرنے کے لیے بنائی گئی ہے۔
+        یہاں آپ کو پاکستان کے مشہور اور کلاسیکل شعرا کی زندگی، ادبی خدمات اور منتخب شاعری پڑھنے کو ملے گی۔
+      </p>
+    </div>
+  </section>  <section id="poets">
+  <div class="ad-box">Google AdSense Ad Space</div>
+  <div id="poetsContainer"></div>
+</section>
+<script>
+  const poets = [
+    {
+      name: "فیض احمد فیض",
+      bio: "فیض احمد فیض انقلابی اور رومانوی شاعر تھے، جن کی شاعری میں جدوجہد اور محبت نمایاں ہے۔",
+      poetry: "متاعِ لوح و قلم چھن گئی تو کیا غم ہے"
+    },
+    {
+      name: "احمد فراز",
+      bio: "احمد فراز جدید اردو غزل کے مقبول ترین شاعروں میں سے تھے۔",
+      poetry: "سنا ہے لوگ اسے آنکھ بھر کے دیکھتے ہیں"
+    },
+    {
+      name: "جون ایلیا",
+      bio: "جون ایلیا فلسفیانہ اور منفرد لہجے کے شاعر تھے۔",
+      poetry: "بہت نزدیک آتی جا رہی ہو"
+    }
+  ];const container = document.getElementById("poetsContainer"); poets.forEach(poet => { container.innerHTML += <div class="poet-card"> <h2>${poet.name}</h2> <h3>زندگی کا تعارف</h3> <p>${poet.bio}</p> <h3>منتخب شاعری</h3> <p>${poet.poetry}</p> </div>; }); </script>
+
+  <section id="contact">
+    <div class="poet-card">
+      <h2>رابطہ</h2>
+      <p>
+        اگر آپ کسی شاعر کا اضافہ کرنا چاہتے ہیں یا اپنی رائے دینا چاہتے ہیں تو ہم سے رابطہ کریں۔
+      </p>
+      <p>Email: info@urdushaaeri.pk</p>
+    </div>
+  </section></div><footer>
+  <p>© 2026 اردو شاعری پاکستان | تمام حقوق محفوظ ہیں</p>
+</footer></body>
+</html>
